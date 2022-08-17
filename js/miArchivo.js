@@ -2,12 +2,12 @@
 const datosPersonales = [];
 let ingreseNombre = prompt("Ingrese su Primer Nombre");
 let ingreseApellido = prompt("Ingrese su Apellido");
-let edad = prompt("Ingrese su Edad");
-let fechaIngreso = prompt("Ingrese su Fecha de Ingreso (dd/mm/yyyy)")
-let esBaja = prompt("Ha Dejado la Compañía? (si o no)")
+let miEdad = prompt("Ingrese su Edad");
+let fechaIngreso = prompt("Ingrese su Fecha de Ingreso (mm/dd/yyyy)")
+let esBaja = prompt("Ha Dejado la Compañía? (si/no)")
 function validadorBaja (esBaja){
     if(esBaja == "si") {
-        fechaBaja = prompt("Ingrese su Fecha de Egreso (dd/mm/yyyy)");
+        fechaBaja = prompt("Ingrese su Fecha de Egreso (mm/dd/yyyy)");
         return fechaBaja;
     } else {
         return "Empleado Activo";
@@ -15,8 +15,20 @@ function validadorBaja (esBaja){
 }
 console.log(validadorBaja(esBaja));
 
-datosPersonales.push(ingreseNombre.toUpperCase(), ingreseApellido.toUpperCase(), edad, fechaIngreso, validadorBaja(esBaja));
+let auxIngreso = new Date (fechaIngreso)
+console.log(auxIngreso);
+console.log(typeof auxIngreso);
+
+datosPersonales.push(ingreseNombre.toUpperCase(), ingreseApellido.toUpperCase(), miEdad, fechaIngreso, validadorBaja(esBaja));
 console.log(datosPersonales)
+
+// PRUEBA DOM CON DATOS EXTRAIDOS DE DATOS PERSONALES
+
+const nombre = document.getElementById("nombre");
+nombre.innerText = `Hola, mi nombre es ${datosPersonales[0]} ${datosPersonales[1]}`
+
+const edad = document.getElementById("edad");
+edad.innerText = `Actualmente tengo ${datosPersonales[3]} años.`
 
 // DEFINIR EL DIA, MES y AÑO DE LA LIQUIDACION
 const fechaActual = new Date();
@@ -97,6 +109,17 @@ console.log(hsExtrasAl50)
 
 let hsExtrasAl100 = ((sueldoMensual / baseHsExtras) * 2) * confirmarHsExtras100(trabajoHsExtras, definicionHsExtras)
 console.log(hsExtrasAl100)
+
+// CALCULO CONCEPTOS INDEMNIZATORIOS POR BAJA DE CONTRATO
+
+function esRenuncia (esBaja) {
+    if(esBaja == "si") {
+        renuncio = prompt("Renunció? (si/no)");
+        return renuncio;
+    } else {
+        return "El empleado no renunció"
+    }
+}
  
 /* ESTABLECER PORCENTAJE RETENCIONES
 const retencionesLey = 0.17;
@@ -108,7 +131,10 @@ let sueldoNeto = sueldoBruto - totalRetenciones;
 console.log(sueldoNeto);*/
 
 
-
+const boton = document.getElementById(boton);
+boton.addEventListener("click", () => {
+    console.log("Los Datos Se Han Guardado Exitosamente!")
+})
 
 
 
