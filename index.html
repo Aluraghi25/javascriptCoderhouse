@@ -4,22 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="./js/openClose.js"></script>
+    <link rel="icon" href="./img/logo.ico">
+    <title>Calculadora de Sueldos y Jornales</title>
 </head>
 <body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img
+                height="50"
+                width="50"
+                src="./img/Picture1-modified.png" alt="Logo de la Pagina">
+                <div class="companyName">
+                    SueldoOnline.com
+                </div>
+            </a>
+            <button class="open-menu" aria-label="Abrir Menú">
+                <img src="./img/hamburger_button_menu_icon_155296.svg" alt="Abrir Menú">
+            </button>
+            <ul class="menu">
+              <button class="close-menu" aria-label="Cerrar Menú">
+                <img src="./img/vcsconflicting_93497.svg" alt="Cerrar Menú">
+              </button> 
+              <li><a href="#"> Inicio </a></li>
+              <li><a href="#"> Caracteristicas </a></li>
+              <li><a href="#"> Calcula tu Sueldo </a></li>
+              <li><a href="#"> Contactenos </a></li>
+            </ul>
+        </nav> 
+    </header>
 
-    <div>
-        <h1> INGRESE SUS DATOS PERSONALES </h1>
-        <ul>
-            <li id="nombre"></li>
-            <li id="edad"></li>
-        </ul>
-    </div>
+    <main>
+        <section class="intro contenedor">
+            <div>
+                <h1 class="subtitulo">Bienvenido a TuSueldoOnline.com</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed distinctio dolor blanditiis fugit. Ipsum esse debitis culpa at possimus dignissimos, voluptatibus ratione saepe, exercitationem praesentium unde corrupti dolorem eligendi.
+                    Blanditiis fugiat, odio modi eaque exercitationem, voluptatem rem eveniet necessitatibus omnis excepturi ratione asperiores, vel dicta possimus reprehenderit sapiente. Et, dolore? Ex voluptatem veniam veritatis, autem velit dignissimos quos atque.
+                    Sit molestias tempore odit dicta ipsam, sequi fuga officiis ut, consequatur numquam ratione eos fugiat doloremque nihil incidunt expedita? Alias quaerat saepe recusandae dicta nostrum voluptates. Vitae earum error distinctio.
+                    Maiores facere quaerat, sequi quod aperiam vero laboriosam expedita minus numquam nobis a provident error pariatur? Necessitatibus, recusandae placeat suscipit ad doloribus fugit at delectus, voluptates quibusdam laudantium dicta voluptatem.
+                    Unde laborum quas quisquam dolores esse nisi repudiandae alias perspiciatis non repellat harum error molestiae numquam est modi blanditiis sed molestias, soluta consequatur? Et sapiente ipsum, atque aliquid vero eveniet?
+                    Dolorem, voluptatem officiis accusantium soluta fugiat sequi repudiandae voluptas sed? Delectus incidunt quis velit magni vel sunt optio. Nisi delectus dolorem maiores numquam suscipit porro voluptates fugiat aliquam nemo placeat?
+                    Architecto quasi veniam odit mollitia magnam libero in placeat impedit. Magnam, voluptate quia error blanditiis aliquam reprehenderit ex nam odio aspernatur commodi sapiente sed excepturi molestiae nemo, eaque impedit dolore.
+                </p>
 
-    <div>
-        <button id="boton"> Confirmar Datos </button>
-    </div>
+                <a href="#" class="introBoton"> Ver Simulación </a>
+
+                <a href="#" class="introBoton"> Contactenos Ahora </a>
+            </div>
+
+            <figure class="introImg">
+                <img data-aos="fade-left" src="./img/towfiqu-barbhuiya-JhevWHCbVyw-unsplash.jpg" class="imagenIntro" alt="Imagen de la Introducción">
+            </figure>
+        </section>
+
+        <section class="contenedor">
+            <h2>Caracteristicas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores eveniet fugiat id sint beatae voluptatibus soluta, dolore, assumenda porro repudiandae non, minima expedita deleniti tempora esse iure explicabo quo.
+            Excepturi temporibus eaque quibusdam aperiam eveniet adipisci, deleniti inventore modi error commodi illum delectus, velit odit. Optio ratione quibusdam culpa voluptate necessitatibus accusamus, quisquam id illum! Soluta fuga expedita iure.
+            Hic perferendis laborum at vel. Eum eveniet dicta sint, exercitationem repellendus quo saepe quibusdam ab iusto voluptas ipsum tempora rem quia consequatur, aperiam impedit! Deleniti autem veritatis ad suscipit laborum.
+            Repellendus dolorum provident, veritatis excepturi in sed eius voluptates? Eveniet, hic facilis architecto, praesentium delectus ex assumenda natus laborum quasi debitis veritatis tenetur reprehenderit laboriosam mollitia voluptatibus porro a reiciendis?
+            Neque deleniti delectus nesciunt omnis explicabo beatae sint mollitia incidunt nisi porro modi voluptates ab doloremque consequatur dolor, necessitatibus deserunt dolorem! Sit laborum eum praesentium. A dicta ipsa vero quod.</p>
+            <div class="tarjetas">
+                <div class="card">
+                    <div class="face front">
+                        <img src="./img/calculatorPayroll.jpg" alt="">
+                        <h3>Simulaciones en Vivo</h3>
+                    </div>
+    
+                    <div class="face back">
+                        <h3>Company</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloremque nesciunt sunt fuga recusandae quidem, obcaecati labore provident, veritatis ratione deleniti error odio vel! Molestiae perspiciatis itaque quos similique fugit!</p>
+                        <div class="link">
+                            <a href="#"> Detalles</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="face front">
+                        <img src="./img/payroll.jpg" alt="">
+                        <h3>Control de Liquidaciones</h3>
+                    </div>
+    
+                    <div class="face back">
+                        <h3>Company</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloremque nesciunt sunt fuga recusandae quidem, obcaecati labore provident, veritatis ratione deleniti error odio vel! Molestiae perspiciatis itaque quos similique fugit!</p>
+                        <div class="link">
+                            <a href="#"> Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="./img/contrato.jpg" alt="">
+                        <h3>Negociaciones Salariales</h3>
+                    </div>
+    
+                    <div class="face back">
+                        <h3>Company</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloremque nesciunt sunt fuga recusandae quidem, obcaecati labore provident, veritatis ratione deleniti error odio vel! Molestiae perspiciatis itaque quos similique fugit!</p>
+                        <div class="link">
+                            <a href="#"> Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor">
+            <form action="" class="formulario">
+                <h2 class="tituloFormulario"> Formulario de Contacto </h2>
+                <input type="text" class="completar"> <label for="" class="label"> Nombre y Apellido </label>
+                <input type="text" class="completar"> <label for="" class="label"> Correo Electronico </label>
+                <input type="text" class="completar"> <label for="" class="label"> Telefono </label>
+                <input type="text" class="completar"> <label for="" class="label"> Escriba su Mensaje </label>
+                <input type="submit" class="enviar">
+            </form>
+        </section>
+
+
+    </main>
 
     <script src="./js/miArchivo.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

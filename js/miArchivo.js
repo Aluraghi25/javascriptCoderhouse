@@ -22,14 +22,6 @@ console.log(typeof auxIngreso);
 datosPersonales.push(ingreseNombre.toUpperCase(), ingreseApellido.toUpperCase(), miEdad, fechaIngreso, validadorBaja(esBaja));
 console.log(datosPersonales)
 
-// PRUEBA DOM CON DATOS EXTRAIDOS DE DATOS PERSONALES
-
-const nombre = document.getElementById("nombre");
-nombre.innerText = `Hola, mi nombre es ${datosPersonales[0]} ${datosPersonales[1]}`
-
-const edad = document.getElementById("edad");
-edad.innerText = `Actualmente tengo ${datosPersonales[3]} años.`
-
 // DEFINIR EL DIA, MES y AÑO DE LA LIQUIDACION
 const fechaActual = new Date();
 const hoy = fechaActual.getDate();
@@ -131,7 +123,7 @@ let sueldoNeto = sueldoBruto - totalRetenciones;
 console.log(sueldoNeto);*/
 
 
-const boton = document.getElementById(boton);
+const boton = document.getElementById('boton');
 boton.addEventListener("click", () => {
     console.log("Los Datos Se Han Guardado Exitosamente!")
 })
